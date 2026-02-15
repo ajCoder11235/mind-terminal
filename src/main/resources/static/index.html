@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Terminal</title>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="graph-container">
+    <div id="close-graph" onclick="document.getElementById('graph-container').style.display='none'">[X] CLOSE MAP</div>
+    <div id="network"></div>
+</div>
+<div class="terminal">
+    <div id="history">
+        <div class="output-line">System initialized...</div>
+        <div class="output-line">Type 'help' for commands.</div>
+    </div>
+    <div class="input-line">
+        <span class="prompt">usr@mind:~$</span>
+        <input type="text" id="commandInput" autofocus>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
